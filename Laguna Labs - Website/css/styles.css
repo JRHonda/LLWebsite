@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	color: white;
+}
+
+.Container {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.MainHeader {
+	background: navy;
+	width: 100%;
+	text-align: center;
+}
+
+.MainHeader-nav {
+	list-style: none;
+	diplay: inline-block;
+	padding: 0;
+}
+
+.MainHeader-nav a {
+	text-decoration: none;
+	color: white;
+}
+
+.MainHeader-nav li {
+	margin: 10px;
+}
+
+
+.MainHeader-logo {
+	height: 50px;
+	width: 50px;
+}
+
+.MainContent {
+	width: 100%;
+	text-align: center;
+}
+
+.UnderConstructionImg {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.MainFooter {
+	text-align: center;
+	background: Navy;
+}
+
+.MainFooter div {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+/*
+  ======			 ======
+		Test Elements
+  ====== .           ======
+*/
+
+.TestBorder {
+	border: 1px solid red;
+}
+
+/*
+  ====== 			   ======
+		Float Clear Fix
+  ======               ======
+*/
+.ClearFix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/*
+  ======			   ======
+	     Media Queries
+  ======               ======
+*/
+
+@media(min-width: 769px) {
+	
+	.Container {
+		max-width: 1150px;
+		width: 90%;
+	}
+	
+	.UnderConstructionImg {
+		
+	}
+	
+	.MainHeader-nav a:hover {
+		opacity: 0.8;
+		color: orange;
+		transition: 0.2s cubic-bezier(0.655 0.045 0.355 1);
+	}
+	
+	.MainHeader-logo:hover {
+		transition-duration: 0.2s;
+		transform: scale(1.2);
+	}
+	
+	.MainHeader-logo:active {
+		transition-duration: 0.2s;
+		transform: scale(0.8);
+	}
+	
+	
+}
+
